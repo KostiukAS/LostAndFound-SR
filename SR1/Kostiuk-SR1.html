@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang = "ua">
+    <head>
+        <title>My first site</title>
+
+        <link rel = "image/x-icon" href = "/images/cat.ico">
+    </head>
+    <body style="background-image: url('.\images\wall.jpg');">
+        <h1>Мій перший заголовок</h1>
+
+        <p>Мій перший параграф.</p>
+
+        <img src = ".\images\cat_on_bread.jpg" alt = "Cat on bread" width = "100" height = "100" style = "float:right;">
+
+        <h6 style = "color: brown;" title = "Червоний заголовок">Найменший заголовок</h6>
+
+        <a href = "https://w3schoolsua.github.io/html/html_basic.html" target = "_blank">Моє перше посилання</a>
+
+        <a href = "https://w3schoolsua.github.io/html/html_basic.html" target = "_blank" title = "Курс">
+            <img src = ".\images\cat_on_bread.jpg" alt = "Cat on bread" style = "width:200px; height:200px; border:0;">
+        </a>
+
+        <br>
+
+        <a href = "#h2">Перехід до розділу</a>
+
+        <br>
+
+        <button>Натисни мене</button>
+
+        <br>
+
+        <img src = ".\images\cat_on_bread.jpg" alt = "Cat on bread" width = "150" height = "150" usemap = "#catmap">
+
+        <map name = "catmap">
+            <area shape = "rect" coords="15,15,135,135" alt = "Кіт" href = "https://uk.wikipedia.org/wiki/%D0%9A%D1%96%D1%82">
+        </map>
+
+        <h2>Невпорядкований список HTML</h2>
+
+        <ul style="list-style-type:disc;">
+            <li>Чай</li>
+            <li>Кола</li>
+            <li>Молоко</li>
+        </ul>
+
+        <ul style="list-style-type:circle;">
+            <li>Чай</li>
+            <li>Кола</li>
+            <li>Молоко</li>
+        </ul>
+
+        <ul style="list-style-type:square;">
+            <li>Чай</li>
+            <li>Кола</li>
+            <li>Молоко</li>
+        </ul>
+
+        <ul style="list-style-type:none;">
+            <li>Чай</li>
+            <li>Кола</li>
+            <li>Молоко</li>
+        </ul>
+
+        <h2 id = "h2">Впорядкований список HTML</h2>
+
+        <ol type="1" start="10">
+            <li>Чай</li>
+            <li>Кола</li>
+            <li>Молоко</li>
+        </ol>
+
+        <ol type="A">
+            <li>Чай</li>
+            <li>Кола</li>
+            <li>Молоко</li>
+        </ol>
+
+        <ol type="a">
+            <li>Чай</li>
+            <li>Кола</li>
+            <li>Молоко</li>
+        </ol>
+
+        <ol type="I">
+            <li>Чай</li>
+            <li>Кола</li>
+            <li>Молоко</li>
+        </ol>
+
+        <ol type="i">
+            <li>Чай</li>
+            <li>Кола</li>
+            <li>Молоко</li>
+        </ol>
+
+        <dl>
+            <dt>Кава</dt>
+            <dd>- чорний гарячий напій</dd>
+            <dt>Молоко</dt>
+            <dd>- білий холодний напій</dd>
+        </dl>
+
+        <pre>
+            Приклад
+            форматованого
+            тексту.
+        </pre>
+
+        <picture>
+            <source srcset="img_wall.png">
+            <source srcset=".\images\cat_on_bread.jpg">
+            <img src="img_heart.gif" alt="Heart" style="width:auto;">
+        </picture>
+
+        <table style="width:100%">
+            <caption>Список людей</caption>
+            <colgroup>
+                <col span="2" style="background-color: #D6EEEE">
+                <col span="2" style="background-color: pink">
+                <col span="1" style="visibility: collapse">
+            </colgroup>
+            <tr>
+              <th style = "width: 65%;">Ім'я</th>
+              <th>Прізвище</th>
+              <th rowspan = "1">Вік</th>
+              <th colspan = "2">Телефон</th>
+            </tr>
+            <tr style="height: 150px;">
+              <td>Андрій</td>
+              <td>Костюк</td>
+              <td>18</td>
+              <td>55577854</td>
+              <td>55577855</td>
+            </tr>
+            <tr>
+              <td>Аліна</td>
+              <td>Назарчук</td>
+              <td>94</td>
+              <td>55342342</td>
+              <td>55564676</td>
+            </tr>
+        </table>
+
+        <form action="Kostiuk-SR1.html" target="_blank" method="post" autocomplete="off" novalidate>
+
+            <fieldset>
+
+                <legend>Особиста інформація:</legend>
+                Ім’я:<br>
+                <input type='text' name='firstname'><br>
+                Прізвище:<br>
+                <input type='text' name='lastname'>
+                <br>
+                <input type='radio' name='gender' value='male' checked> Чоловіча
+                <br>
+                <input type='radio' name='gender' value='female'> Жіноча
+                <br>
+                <input type='radio' name='gender' value='other'> Інше
+                <br>
+                <select name="cars" size="2" multiple>
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="fiat">Fiat</option>
+                    <option value="audi" selected>Audi</option>
+                </select>
+                <br>
+                <textarea name="message" rows="10" cols="30" style="height: 100px; width: 100px;">The cat.
+                </textarea>
+                <br>
+                <button type="button" onclick="alert('??????????')" disabled>?</button>
+                <br>
+                <input type='submit' value='Відправити'>
+                <input type="reset">
+
+            </fieldset>
+
+        </form>
+    </body>
+</html>
