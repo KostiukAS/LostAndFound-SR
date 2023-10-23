@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>FLEXBOX Костюк</title>
+    </head>
+
+    <body>
+        <header>
+            <div class = "header-text-div"><h1>Що ви опануєте?</h1></div>
+            <div class="header-flexbox">
+                <div class="header-flexbox-div">
+                    <img src=".\images\HTML-CSS.jpg" alt="HTML/CSS" style="width: 80%;">
+                    <h4>HTML/CSS</h4>
+                </div>
+                <div class="header-flexbox-div">
+                    <img src=".\images\JavaScript.png" alt="JavaScript" style="width: 80%;">
+                    <h4>JavaScript</h4>
+                </div>
+                <div class="header-flexbox-div">
+                    <img src=".\images\React.png" alt="React" style="width: 80%;">
+                    <h4>React</h4>
+                </div>
+                <div class="header-flexbox-div">
+                    <img src=".\images\React2.png" alt="React-Redux" style="width: 80%;">
+                    <h4>React</h4>
+                </div>
+                <div class="header-flexbox-div">
+                    <img src=".\images\TypeScript.png" alt="TypeScript" style="width: 80%;">
+                    <h4>TypeScript</h4>
+                </div>
+                <div class="header-flexbox-div">
+                    <img src=".\images\Angular.png" alt="Angular" style="width: 80%;">
+                    <h4>Angular</h4>
+                </div>
+                <div class="header-flexbox-div">
+                    <img src=".\images\GitHub.png" alt="GitHub" style="width: 80%;">
+                    <h4>GitHub</h4>
+                </div>
+                <div class="header-flexbox-div">
+                    <img src=".\images\Firebase.png" alt="Firebase" style="width: 80%;">
+                    <h4>GitHub</h4>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="main-flexbox">
+                <div style="margin-top: 20px;">
+                    <img src=".\images\Main-img.png" alt="Особливості працевлаштування" style="width: 100%;">
+                </div>
+                <div>
+                    <img src=".\images\Main-img2.png" alt="Особливості працевлаштування 2" style="width: 100%;">
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-flexbox">
+                <div class="footer-flexbox-div-1" style="width: 70%; background-color: black;">
+                    <h2 style="color: white;">© 2023</h2>
+                </div>
+                <div class="footer-flexbox-div">
+                    <img src=".\images\Facebook.png" alt="Facebook" style="width: 80%;">
+                </div>
+                <div class="footer-flexbox-div">
+                    <img src=".\images\tiktok.png" alt="TikTok" style="width: 80%;">
+                </div>
+                <div class="footer-flexbox-div">
+                    <img src=".\images\youtube.png" alt="YouTube" style="width: 80%;">
+                </div>
+                <div class="footer-flexbox-div">
+                    <img src=".\images\telegram.png" alt="Telegram" style="width: 80%;">
+                </div>
+                <div class="footer-flexbox-div">
+                    <img src=".\images\instagram.png" alt="Inst" style="width: 80%;">
+                </div>
+            </div>
+        </footer>
+    </body>
+
+    <style>
+
+        .header-text-div {
+            background-color: #303030;
+            color: white;
+            text-align: center;
+            min-height: fit-content;
+            min-width: fit-content;
+        }
+
+        .header-flexbox {
+            display: flex;
+            justify-content: space-between;
+            min-width: 1000px;
+        }
+
+        .header-flexbox-div {
+            background-color: #303030;
+            color: white;
+            max-height: 300px;
+            max-width: 200px;
+            text-align: center;
+            width: 11%;
+        }
+
+        .main-flexbox {
+            display: flex;
+            flex-direction: column;
+            min-width: 1000px;
+        }
+
+        .footer-flexbox {
+            display: flex;
+            justify-content: space-between;
+            min-width: 1000px;
+        }
+
+        .footer-flexbox-div {
+            background-color: black;
+            max-width: 64px;
+            min-height: 64px;
+            width: 4%;
+            text-align: center;
+        }
+
+    </style>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Гумова таблична розмітка</title>
+    </head>
+
+    <body>
+        <table>
+            <tr>
+                <td class="up-bottom-tablets" colspan="7">Гумова таблична розмітка. Перший блок</td>
+            </tr>
+            <tr>
+                <td class="central-tablets">Другий блок</td>
+                <td class="central-space"></td>
+                <td class="central-tablets">Третій блок</td>
+                <td class="central-space"></td>
+                <td class="central-tablets">Четвертий блок</td>
+                <td class="central-space"></td>
+                <td class="central-tablets">П'ятий блок</td>
+            </tr>
+            <tr>
+                <td class="up-bottom-tablets" colspan="7">Шостий блок</td>
+            </tr>
+        </table>
+    </body>
+
+    <style>
+
+        table {
+            width: 100%;
+            height: 100vh;
+        }
+
+        table, tr, td {
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+
+        .up-bottom-tablets {
+            height: 15%;
+        }
+
+        .central-tablets {
+            height: 70%;
+            width: 22%;
+            text-align: center;
+        }
+
+        .central-space {
+            width: 4%;
+        }
+
+    </style>
+
+</html>
