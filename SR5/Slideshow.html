@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Слайд шоу</title>
+        <link rel="stylesheet" href="Slideshow.css">
+    </head>
+
+    <body>
+    
+    <h1 style="text-align: center;">Слайд шоу</h1>
+
+    <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="image1.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="image2.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="image3.jpg" style="width:100%">
+    </div>
+  
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+    </div>
+
+    <h2>Розмір зображень:</h2>
+
+    <div>
+      <button onclick="changeSize(1)">Маленькі</button>
+      <button onclick="changeSize(2)">Середні</button>
+      <button onclick="changeSize(3)">Великі</button>
+    </div>
+
+    <h2>Швидкість переключення слайдів (від 1 до 10 секунд):</h2>
+
+    <div class="slidecontainer">
+      <input type="range" min="1000" max="10000" value="5000" id="myRange">
+    </div>
+
+    <script src="Slideshow.js"></script>
+
+    </body>
+
+</html>
