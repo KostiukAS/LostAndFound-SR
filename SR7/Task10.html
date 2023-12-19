@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Завдання №10</title>
+    </head>
+
+    <body>
+        <div id="controls">
+            <input type="number" min="1" max="100" step="1">
+            <button type="button" id="data-create">Create</button>
+            <button type="button" id="data-destroy">Destroy</button>
+        </div>
+
+        <div id="boxes"></div>
+    </body>
+
+    <script>
+        let mainDiv = document.getElementById("boxes");
+        let createButton = document.getElementById("data-create");
+        let destroyButton = document.getElementById("data-destroy");
+
+        function getRandomHexColor() {
+            return '#' + Math.floor(Math.random() * 16777215).toString(16).padStart(6, 0);
+        }
+
+        function createBoxes(amount) {
+            let widthAndHeight = 20;
+
+            for (let i = 1; i <= amount; i++)
+            {
+                let newDiv = document.createElement("div");
+                widthAndHeight += 10;
+                newDiv.style.width = widthAndHeight + "px";
+                newDiv.style.height = widthAndHeight + "px";
+                newDiv.style.background = getRandomHexColor();
+                mainDiv.appendChild(newDiv);
+            }
+        }
+
+        function destroyBoxes() {
+            mainDiv.querySelectorAll("div").forEach(elem => {
+                elem.remove();
+            });
+        }
+
+        createButton.addEventListener("click", (e) => {
+            let boxNumber = document.getElementsByTagName("input")[0].value;
+
+            if(boxNumber < 1 || boxNumber > 100)
+            {
+                alert("Invalid input. Input must be from 1 to 100.");
+                return;
+            }
+            
+            destroyBoxes();
+            createBoxes(boxNumber);
+        });
+
+        destroyButton.addEventListener("click", (e) => {
+            destroyBoxes();
+        });
+    </script>
+
+</html>

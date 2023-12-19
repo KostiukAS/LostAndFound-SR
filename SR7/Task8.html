@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Завдання №8</title>
+    </head>
+
+    <body>
+        <form class="login-form">
+            <label>
+                Email
+                <input type="email" name="email">
+            </label>
+            <label>
+                Password
+                <input type="password" name="password">
+            </label>
+            <button type="submit">Log in</button>
+        </form>
+    </body>
+
+    <script>
+        let mainForm = document.getElementsByClassName("login-form")[0];
+
+        mainForm.addEventListener("submit", (e) => {
+            e.preventDefault();
+            
+            let user = {
+                email: String(document.getElementsByName("email")[0].value).trim(),
+                password: String(document.getElementsByName("password")[0].value).trim()
+            };
+
+            if(user.email == "" || user.password == "")
+            {
+                alert("All form fields must be filled in!");
+                return;
+            }
+
+            console.log(user);
+            mainForm.reset();
+        });
+    </script>
+
+</html>
